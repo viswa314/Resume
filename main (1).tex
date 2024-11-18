@@ -1,0 +1,219 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+
+\input{glyphtounicode}
+
+% Anpassung der Ränder
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Abschnittsformatierung
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+\pdfgentounicode=1
+
+% Benutzerdefinierte Befehle
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% Dokument
+\begin{document}
+
+% Kopfzeile
+\begin{center}
+    \textbf{\Huge \scshape Viswa Gandamalla} \\ \vspace{8pt}
+    \small
+    \faIcon{github} \href{https://github.com/viswa314}{github.com/viswa314} $|$
+    \faIcon{linkedin} \href{https://de.linkedin.com/in/viswa-gandamalla-2064101b4/de}{linkedin.com/in/viswa-gandamalla-2064101b4} $|$
+    \faIcon{envelope} \href{mailto:viswagandamalla@gmail.com}{viswagandamalla@gmail.com} $|$
+    +4915758074771 $|$ Sebastian Straße 7, Ingolstadt- 85049
+\end{center}
+
+% Ausbildung
+\section{Ausbildung}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Technische Hochschule Ingolstadt}{Okt 2021 -- heute}
+      {Master in International Automotive Engineering}{Ingolstadt, Deutschland}
+      \resumeItemListStart
+        \resumeItem{\textbf{Wichtige Kurse:} Integrierte Sicherheits- und Assistenzsysteme, Sensortechnologie und Signalverarbeitung, Automobil-Radarsysteme, Test- und Simulationsmethoden für Fahrzeugsicherheitssysteme und Fahrzeugdynamik}
+        \resumeItem{\textbf{Auszeichnungen:} Deutschlandstipendium}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Vardhaman College of Engineering}{Mai 2017 -- Sep 2020}
+      {Bachelor in Maschinenbau}{Hyderabad, Indien}
+      \resumeItemListStart
+        \resumeItem{\textbf{Auszeichnungen:} Akademischer Exzellenzpreis}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% Erfahrung
+\section{Erfahrung}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Akkodis}{Jan 2024 -- Jun 2024}
+      {Masterarbeit über Objekterkennung für TurtleBot3}{Ingolstadt, Deutschland}
+      \resumeItemListStart
+        \resumeItem{Durchführung einer Studie zur Objekterkennung für TurtleBot3, Vergleich traditioneller Methoden (HOG+SVM, Haar-Cascades) und moderner Techniken (YOLOv8, RT-DETR).}
+        \resumeItem{Implementierung und Bewertung von HOG+SVM und Haar-Cascades, wobei HOG+SVM eine mAP von 41,97\% erreichte, was die Grenzen traditioneller Methoden demonstrierte.}
+        \resumeItem{Verbesserung der Echtzeiterkennung mit YOLOv8 (88,7\% mAP) und RT-DETR (81,3\% mAP), was die Robustheit unter variierenden Bedingungen erhöhte.}
+        \resumeItem{Zusammenarbeit mit einem interdisziplinären Team zur Integration von Objekterkennungslösungen in breitere Projektziele, Präsentation der Ergebnisse in wöchentlichen Meetings.}
+      \resumeItemListEnd
+      \hspace*{\labelsep}\textbf{Technologie-Stack:} Python, ROS2, OpenCV, scikit-learn, PyTorch, ultralytics, Confluence, Jira, Git
+
+    \resumeSubheading
+      {Akkodis}{Dez 2023 -- Jan 2024}
+      {Werkstudent}{Ingolstadt, Deutschland}
+      \resumeItemListStart
+        \resumeItem{Praktische Erfahrung mit Turtlebot3 unter Verwendung von ROS2 gesammelt.}
+        \resumeItem{Nutzung des Atlassian-Toolchains (Jira, Confluence und Bitbucket) zur Verwaltung und Dokumentation des Projektfortschritts.}
+        \resumeItem{Zusammenarbeit mit Teammitgliedern zur Fehlersuche und Optimierung der Verwendung der Realsense D405-Tiefenkamera.}
+        \resumeItem{Kommunikation komplexer technischer Konzepte an nicht-technische Stakeholder zur Sicherstellung von Ausrichtung und Verständnis im Team.}
+      \resumeItemListEnd
+      \hspace*{\labelsep}\textbf{Technologie-Stack:} Python, ROS2, Confluence, Jira, Bitbucket, Git
+
+    \resumeSubheading
+      {Cognizant}{Jul 2023 -- Aug 2023}
+      {Virtuelles Praktikum in Künstlicher Intelligenz von Forage}{}
+      \resumeItemListStart
+        \resumeItem{Datenanalyse zur Gewinnung von Erkenntnissen aus verschiedenen Datensätzen, Präsentation der Ergebnisse vor dem Senior Management.}
+        \resumeItem{Effektive Kommunikation der Ergebnisse aus dem maschinellen Lernen an die Stakeholder, was zu umsetzbaren Geschäftsentscheidungen führte.}
+        \resumeItem{Entwicklung von Fähigkeiten in Datenmanagement, KI und Analytik, Erkundung von Karrieremöglichkeiten innerhalb von Cognizant.}
+        \resumeItem{Verbesserung der Datenverarbeitungseffizienz durch Implementierung optimierter Algorithmen.}
+      \resumeItemListEnd
+      \hspace*{\labelsep}\textbf{Technologie-Stack:} Python, scikit-learn
+
+    \resumeSubheading
+      {TechnoHacks EduTech}{Aug 2023 -- Sep 2023}
+      {Virtuelles Praktikum im Bereich Maschinenlernen}{}
+      \resumeItemListStart
+        \resumeItem{Verwendung des Iris-Datensatzes zum Aufbau eines maschinellen Lernmodells zur Klassifikation von Irisblumen basierend auf ihren Sepal- und Petaldimensionen.}
+        \resumeItem{Verwendung eines Datensatzes mit Transaktionsdaten zur Erkennung betrügerischer Transaktionen, dabei eine Genauigkeit von 85\% erreicht.}
+        \resumeItem{Zusammenarbeit mit Kollegen zur Überprüfung und Verfeinerung von maschinellen Lernmodellen, was die Gesamtleistung um 10\% verbesserte.}
+        \resumeItem{Präsentation der Projektergebnisse vor Mentoren und Kollegen, positives Feedback für Klarheit und Gründlichkeit erhalten.}
+      \resumeItemListEnd
+      \hspace*{\labelsep}\textbf{Technologie-Stack:} Python, ML-Regression und Klassifikation
+
+    \resumeSubheading
+      {CARISSMA}{Nov 2022 -- Apr 2023}
+      {Forschungsstudentenassistent}{Ingolstadt, Deutschland}
+      \resumeItemListStart
+        \resumeItem{Implementierung des YOLO V4-Algorithmus zur Objekterkennung, Erhöhung der Erkennungsgenauigkeit um 12\%.}
+        \resumeItem{Optimierung von Modellen zur Verbesserung der Genauigkeit und Echtzeitleistung, was zu einer Reduzierung der Verarbeitungszeit um 25\% führte.}
+        \resumeItem{Datenerhebung und -analyse im Carla-Simulator durch Konfiguration der Umgebung, was zu verbesserten Trainingsdatensätzen für Modelle führte.}
+        \resumeItem{Zusammenarbeit mit einem Forscherteam zur Präsentation der Ergebnisse auf einem departmental Seminar, erhielt Lob für detaillierte Analyse und Präsentationsfähigkeiten.}
+      \resumeItemListEnd
+      \hspace*{\labelsep}\textbf{Technologie-Stack:} Carla, Python, PyTorch
+  \resumeSubHeadingListEnd
+
+% Projekte
+\section{Projekte}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Deep Learning für Verkehrszenario-Analysen}}{Okt 2021 -- Jan 2022}
+      \resumeItemListStart
+        \resumeItem{Analyse und Vorverarbeitung von Fleet-Daten aus der AWS-Cloud-Datenbank mit Numpy und Pandas.}
+        \resumeItem{Präsentation einer Clustering-Lösung für Verkehrszenarien unter Verwendung von Unsupervised Learning mit CNN-Autoencodern in PyTorch und Validierung der Modellleistung.}
+        \resumeItem{Zusammenarbeit mit einem Team zur Integration der Ergebnisse in breitere Verkehrsmanagementlösungen.}
+      \resumeItemListEnd
+      \hspace*{\labelsep}\textbf{Technologie-Stack:} Numpy, Pandas, PyTorch (konvolutionale neuronale Netze), Tensorboard
+
+    \resumeProjectHeading
+      {\textbf{Echtzeitfahrzeug- und Kennzeichenerkennung auf Edge-Geräten mit YOLO V4}}{Mär 2022 -- Jul 2022}
+      \resumeItemListStart
+        \resumeItem{Entwicklung eines hochgenauen Echtzeitfahrzeug- und Kennzeichenerkennungssystems mit YOLO V4 unter Verwendung von Transferlernen.}
+        \resumeItem{Leistungsverbesserung durch Datensatzaugmentation, wodurch eine Erkennungsgenauigkeit von 95\% erreicht wurde.}
+        \resumeItem{Erfolgreiche Bereitstellung auf NVIDIA Jetson Nano in einer eingebetteten Linux-Umgebung.}
+        \resumeItem{Zusammenarbeit mit einem interdisziplinären Team zur Prüfung und Validierung des Systems, Präsentation der Ergebnisse an Stakeholder.}
+      \resumeItemListEnd
+      \hspace*{\labelsep}\textbf{Technologie-Stack:} Python, OpenCV, THI-Labeling-Tool, Google Colab, Linux 
+
+    \resumeProjectHeading
+      {\textbf{Optimierung des Kühlkörpers für Nvidia Jetson Nano}}{Okt 2022 -- Mär 2023}
+      \resumeItemListStart
+        \resumeItem{Entwicklung eines rechteckigen Kühlkörpers zur Senkung der Temperatur von 105°C auf 85°C.}
+        \resumeItem{Durchführung einer Optimierungsstudie zur Bestimmung des effizientesten Designs, was zu einer Verbesserung der Kühlleistung um 20\% führte.}
+        \resumeItem{Durchführung von Mesh-Konvergenzstudien zusammen mit parametrischen Analysen zur weiteren Verfeinerung des Designs.}
+        \resumeItem{Zusammenarbeit mit einem Team zur Dokumentation und Präsentation der Ergebnisse in einem detaillierten technischen Bericht.}
+      \resumeItemListEnd
+      \hspace*{\labelsep}\textbf{Technologie-Stack:} Floefd 2021, MS Word
+  \resumeSubHeadingListEnd
+
+% Kurse
+\section{Kurse}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Full Stack Data Science und Künstliche Intelligenz}{Mai 2023 -- Sep 2023}
+      {Naresh i Technologies}{Hyderabad, Indien}
+      
+    \resumeSubheading
+      {Komplette Generative KI mit Langchain, Huggingface (NLP, LLM, GenAI)}{Jul 2024 -- heute}
+      {Udemy}{}
+  \resumeSubHeadingListEnd
+
+% Fähigkeiten
+\section{Fähigkeiten}
+  \resumeSubHeadingListStart
+    \resumeItem{\textbf{Programmierung:} Python (SciKit-Learn, Pandas, NumPy, OpenCV, Matplotlib), ROS (Robot Operating System)}
+    \resumeItem{\textbf{Maschinenlernen \& Datenwissenschaft:} Deep Learning: PyTorch, TensorFlow, Keras; Datenvisualisierung: Matplotlib, Seaborn; Statistische Analyse und Datenmining: Scikit-learn}
+    \resumeItem{\textbf{Software \& Tools:} MS Office, Matlab - Simulink, SolidWorks, Visual Studio, Git, Carla}
+    \resumeItem{\textbf{Methoden:} Atlassian-Toolchain (Jira, Confluence, Bitbucket)}
+    \resumeItem{\textbf{Betriebssysteme:} Windows, Linux}
+    \resumeItem{\textbf{Soziale Fähigkeiten:} Teamarbeit, effektive Kommunikation, Problemlösung, analytisch, selbstständiges Arbeiten}
+    \resumeItem{\textbf{Führerschein:} Klasse B}
+  \resumeSubHeadingListEnd
+
+% Sprachen
+\section{Sprachen}
+  \resumeSubHeadingListStart
+    \resumeItem{\textbf{Englisch:} Fließende Arbeitskenntnisse}
+    \resumeItem{\textbf{Deutsch:} Grundkenntnisse (B1)}
+  \resumeSubHeadingListEnd
+
+\end{document}
